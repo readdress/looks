@@ -51,6 +51,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@size-limit/preset-small-lib": "^7.0.8",
+    "@storybook/addon-controls": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.5.9",
@@ -67,5 +68,11 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.4",
+    "stylis-plugin-rtl": "^2.1.1"
   }
 }
