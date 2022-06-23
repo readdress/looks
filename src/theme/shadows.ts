@@ -1,20 +1,19 @@
-// ** Theme Type Import
 import { PaletteMode, ThemeOptions } from '@mui/material'
 
 const Shadows = (mode: PaletteMode = 'light'): ThemeOptions['shadows'] => {
   if (mode === 'light') {
     return [
       'none',
-      '0px 2px 1px -1px rgba(58, 53, 65, 0.2), 0px 1px 1px 0px rgba(58, 53, 65, 0.14), 0px 1px 3px 0px rgba(58, 53, 65, 0.12)',
-      '0px 3px 1px -2px rgba(58, 53, 65, 0.2), 0px 2px 2px 0px rgba(58, 53, 65, 0.14), 0px 1px 5px 0px rgba(58, 53, 65, 0.12)',
-      '0px 4px 8px -4px rgba(58, 53, 65, 0.42)',
-      '0px 6px 18px -8px rgba(58, 53, 65, 0.56)',
-      '0px 3px 5px -1px rgba(58, 53, 65, 0.2), 0px 5px 8px 0px rgba(58, 53, 65, 0.14), 0px 1px 14px 0px rgba(58, 53, 65, 0.12)',
-      '0px 2px 10px 0px rgba(58, 53, 65, 0.1)',
-      '0px 4px 5px -2px rgba(58, 53, 65, 0.2), 0px 7px 10px 1px rgba(58, 53, 65, 0.14), 0px 2px 16px 1px rgba(58, 53, 65, 0.12)',
-      '0px 5px 5px -3px rgba(58, 53, 65, 0.2), 0px 8px 10px 1px rgba(58, 53, 65, 0.14), 0px 3px 14px 2px rgba(58, 53, 65, 0.12)',
-      '0px 5px 6px -3px rgba(58, 53, 65, 0.2), 0px 9px 12px 1px rgba(58, 53, 65, 0.14), 0px 3px 16px 2px rgba(58, 53, 65, 0.12)',
-      '0px 6px 6px -3px rgba(58, 53, 65, 0.2), 0px 10px 14px 1px rgba(58, 53, 65, 0.14), 0px 4px 18px 3px rgba(58, 53, 65, 0.12)',
+      '0px 1px 2px -1px rgba(58, 53, 65, 0.015), 0px 1px 2px 0px rgba(58, 53, 65, 0.015), 0px 1px 3px 0px rgba(58, 53, 65, 0.015)',
+      '0px 2px 3px -2px rgba(58, 53, 65, 0.025), 0px 2px 3px 0px rgba(58, 53, 65, 0.025), 0px 2px 4px 0px rgba(58, 53, 65, 0.025)',
+      '0px 4px 8px -4px rgba(58, 53, 65, 0.15)',
+      '0px 6px 18px -8px rgba(58, 53, 65, 0.2)',
+      '0px 3px 5px -1px rgba(58, 53, 65, 0.75), 0px 5px 8px 0px rgba(58, 53, 65, 0.75), 0px 1px 14px 0px rgba(58, 53, 65, 0.75)',
+      '0px 2px 10px 0px rgba(58, 53, 65, 0.15)',
+      '0px 4px 5px -2px rgba(58, 53, 65, 0.065), 0px 7px 10px 1px rgba(58, 53, 65, 0.055), 0px 2px 16px 1px rgba(58, 53, 65, 0.055)',
+      '0px 5px 5px -3px rgba(58, 53, 65, 0.085), 0px 8px 10px 1px rgba(58, 53, 65, 0.06), 0px 3px 14px 2px rgba(58, 53, 65, 0.06)',
+      '0px 5px 6px -3px rgba(58, 53, 65, 0.08), 0px 9px 12px 1px rgba(58, 53, 65, 0.085), 0px 3px 16px 2px rgba(58, 53, 65, 0.085)',
+      '0px 6px 6px -3px rgba(58, 53, 65, 0.09), 0px 10px 14px 1px rgba(58, 53, 65, 0.1), 0px 4px 18px 3px rgba(58, 53, 65, 0.1)',
       '0px 6px 7px -4px rgba(58, 53, 65, 0.2), 0px 11px 15px 1px rgba(58, 53, 65, 0.14), 0px 4px 20px 3px rgba(58, 53, 65, 0.12)',
       '0px 7px 8px -4px rgba(58, 53, 65, 0.2), 0px 12px 17px 2px rgba(58, 53, 65, 0.14), 0px 5px 22px 4px rgba(58, 53, 65, 0.12)',
       '0px 7px 8px -4px rgba(58, 53, 65, 0.2), 0px 13px 19px 2px rgba(58, 53, 65, 0.14), 0px 5px 24px 4px rgba(58, 53, 65, 0.12)',

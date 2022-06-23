@@ -22,7 +22,7 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=18"
   },
   "husky": {
     "hooks": {
@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "looks",
+  "name": "@readdress/looks",
   "author": "readdress",
   "module": "dist/looks.esm.js",
   "size-limit": [
