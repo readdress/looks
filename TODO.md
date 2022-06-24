@@ -1,7 +1,7 @@
 # TODO
 
 - Finish youtube videos  
-- Paper / Shadows
+
 - Set dark mode toggle for storybook
 - Icons
 - Typography
