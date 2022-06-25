@@ -26,10 +26,10 @@ const DefaultPalette = (mode: PaletteMode = 'light') => {
       contrastText: '#fff'
     },
     secondary: {
-      light: '#14367a',
-      main: '#082049',
-      dark: '#000b1a',
-      contrastText: '#fff'
+      light: '#edf1f7',
+      main: '#cdd6e3',
+      dark: '#acbbd0',
+      contrastText: '#080c12'
     },
     success: {
       light: '#4caf50',

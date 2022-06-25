@@ -1,8 +1,6 @@
 # TODO
 
-- Finish youtube videos  
-
-- Set dark mode toggle for storybook
+- Finish youtube videos
 - Icons
 - Typography
 - Avatar & image

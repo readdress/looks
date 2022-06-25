@@ -1,4 +1,4 @@
-import { Theme } from '@mui/material/styles'
+import { Theme, darken, alpha } from '@mui/material/styles'
 
 const button = (theme: Theme) => {
   return {
@@ -13,7 +13,7 @@ const button = (theme: Theme) => {
           textTransform: 'none'
         },
         contained: {
-          boxShadow: 'none', //theme.shadows[3]
+          boxShadow: theme.shadows[3],
           padding: `${theme.spacing(1.875, 5.5)}`
         },
         outlined: {
@@ -36,12 +36,31 @@ const button = (theme: Theme) => {
           '&.MuiButton-outlined': {
             padding: `${theme.spacing(1.875, 6.25)}`
           }
+        },
+        containedSecondary: {
+          backgroundColor: theme.palette.mode === 'dark' ? alpha(theme.palette.secondary.dark, 0.7) : theme.palette.secondary.main,
+        },
+        outlinedSecondary: {
+          borderColor: theme.palette.mode === 'dark' ? alpha(theme.palette.secondary.dark, 0.65) : theme.palette.secondary.dark,
+          color: darken(theme.palette.secondary.dark, 0.3),
+        },
+        textSecondary: {
+          color: darken(theme.palette.secondary.dark, 0.3),
         }
+      },
+      defaultProps: {
+        variant: 'contained'
       }
     },
     MuiButtonBase: {
       defaultProps: {
-        disableRipple: true
+      }
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        colorSecondary: {
+          color: theme.palette.mode === 'dark' ? alpha(theme.palette.secondary.dark, 0.65) : theme.palette.secondary.dark,
+        }
       }
     }
   }
