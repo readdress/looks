@@ -1,16 +1,20 @@
-import { PaletteMode } from '@mui/material'
+import { PaletteMode, alpha } from '@mui/material'
 
 const DefaultPalette = (mode: PaletteMode = 'light') => {
-  const lightColor = '58, 53, 65'
-  const darkColor = '231, 227, 252'
-  const mainColor = mode === 'light' ? lightColor : darkColor
+  let background = '#F4F5FA'
+  let paperBackground = '#fff'
 
-  const defaultBgColor = () => {
-    if (mode === 'light') {
-      return '#F4F5FA'
-    } else if (mode === 'dark') {
-      return '#1b2431'
-    } else return '#F4F5FA'
+  let primaryColor = '#2D3748'
+  let secondaryColor = '#718096'
+  let disabledColor = '#A0AEC0'
+
+  if (mode === 'dark') {
+    background = '#1b2431'
+    paperBackground = '#303a4e'
+
+    primaryColor = '#CBD5E0'
+    secondaryColor = '#A0AEC0'
+    disabledColor = '#718096'
   }
 
   return {
@@ -56,38 +60,38 @@ const DefaultPalette = (mode: PaletteMode = 'light') => {
       contrastText: '#fff'
     },
     grey: {
-      50: '#edf1f7',
-      100: '#cdd6e3',
-      200: '#acbbd0',
-      300: '#8aa0bf',
-      400: '#6985af',
-      500: '#506c95',
-      600: '#3f5474',
-      700: '#2d3c51',
-      800: '#1b2431',
-      900: '#080c12',
+      50: '#F7FAFC',
+      100: '#EDF2F7',
+      200: '#E2E8F0',
+      300: '#CBD5E0',
+      400: '#A0AEC0',
+      500: '#718096',
+      600: '#4A5568',
+      700: '#2D3748',
+      800: '#1A202C',
+      900: '#171923',
       A100: '#D5D5D5',
       A200: '#AAAAAA',
       A400: '#616161',
       A700: '#303030'
     },
     text: {
-      primary: `rgba(${mainColor}, 0.87)`,
-      secondary: `rgba(${mainColor}, 0.68)`,
-      disabled: `rgba(${mainColor}, 0.38)`
+      primary: primaryColor,
+      secondary: secondaryColor,
+      disabled: disabledColor,
     },
-    divider: `rgba(${mainColor}, 0.12)`,
+    divider: alpha(primaryColor, 0.12),
     background: {
-      paper: mode === 'light' ? '#fff' : '#303a4e',
-      default: defaultBgColor()
+      paper: paperBackground,
+      default: background
     },
     action: {
-      active: `rgba(${mainColor}, 0.54)`,
-      hover: `rgba(${mainColor}, 0.04)`,
-      selected: `rgba(${mainColor}, 0.08)`,
-      disabled: `rgba(${mainColor}, 0.3)`,
-      disabledBackground: `rgba(${mainColor}, 0.18)`,
-      focus: `rgba(${mainColor}, 0.12)`
+      active: alpha(primaryColor, 0.54),
+      hover: alpha(primaryColor, 0.04),
+      selected: alpha(primaryColor, 0.08),
+      disabled: alpha(primaryColor, 0.3),
+      disabledBackground: alpha(primaryColor, 0.18),
+      focus: alpha(primaryColor, 0.12)
     }
   }
 }

@@ -40,11 +40,13 @@ const Typography = (theme: Theme) => {
       color: theme.palette.text.secondary
     },
     body1: {
+      fontSize: '0.875rem',
       letterSpacing: '0.15px',
       color: theme.palette.text.primary
     },
     body2: {
       lineHeight: 1.5,
+      fontSize: '0.875rem',
       letterSpacing: '0.15px',
       color: theme.palette.text.secondary
     },
