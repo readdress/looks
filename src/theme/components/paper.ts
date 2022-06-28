@@ -8,6 +8,9 @@ const paper = (theme: Theme) => {
   return {
     MuiPaper: {
       styleOverrides: {
+        root: {
+          backgroundImage: 'none'
+        },
         outlined: {
           borderColor
         }
