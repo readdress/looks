@@ -15,8 +15,9 @@ const Label = styled(Box, {
     shouldForwardProp: prop => prop !== 'placement',
 })<BoxProps & {placement?: 'left' | 'top'}>(({placement = 'left', theme}) => {
     return ({
-        width: placement === 'left' ? '30%' : '100%',
+        width: placement === 'left' ? '40%' : '100%',
         minWidth: 120,
+        maxWidth: 240,
         flexShrink: 0,
         ...(placement === 'left' ? { paddingRight: theme.spacing(5) } : { paddingBottom: theme.spacing(1) })
     })

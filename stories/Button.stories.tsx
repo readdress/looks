@@ -2,7 +2,15 @@ import React from 'react'
 import { Button, ButtonProps } from '../src'
 import { Meta, Story } from '@storybook/react'
 import { Stack, IconButton } from '@mui/material'
-import { BiAbacus, BiCog, BiChevronDown, BiTrash, BiCloudUpload, BiCodeAlt, BiDotsVerticalRounded } from 'react-icons/bi'
+import {
+    BiAbacus,
+    BiCog,
+    BiChevronDown,
+    BiTrash,
+    BiCloudUpload,
+    BiCodeAlt,
+    BiDotsVerticalRounded
+} from 'react-icons/bi'
 
 const meta: Meta<ButtonProps> = {
     title: 'Inputs/Button',

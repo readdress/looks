@@ -3,7 +3,8 @@ import Grid, { GridProps } from '@mui/material/Grid'
 import DescriptionListContext, { defaultContext } from './context'
 import { DescriptionProps } from './decsription'
 
-export { default as Description, DescriptionProps } from './decsription'
+export { default as Description } from './decsription'
+export type { DescriptionProps } from './decsription'
 
 export interface DescriptionListProps extends GridProps {
     labelPlacement?: 'left' | 'top'
@@ -12,7 +13,7 @@ export interface DescriptionListProps extends GridProps {
     columns?: 1 | 2
 }
 
-const DescriptionList: React.FC<DescriptionListProps> = props => {
+export const DescriptionList: React.FC<DescriptionListProps> = props => {
     const {
         labelPlacement,
         actionPlacement,
@@ -49,5 +50,3 @@ const DescriptionList: React.FC<DescriptionListProps> = props => {
         </DescriptionListContext.Provider>
     )
 }
-
-export default DescriptionList

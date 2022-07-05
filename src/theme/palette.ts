@@ -36,15 +36,15 @@ const DefaultPalette = (mode: PaletteMode = 'light') => {
       contrastText: '#080c12'
     },
     success: {
-      light: '#4caf50',
-      main: '#43a047',
-      dark: '#388e3c',
+      light: '#66bb6a',
+      main: '#4caf50',
+      dark: '#43a047',
       contrastText: '#fff'
     },
     error: {
-      light: '#e53935',
-      main: '#d32f2f',
-      dark: '#c62828',
+      light: '#ef5350',
+      main: '#f44336',
+      dark: '#e53935',
       contrastText: '#fff'
     },
     warning: {
