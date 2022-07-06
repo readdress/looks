@@ -1,11 +1,8 @@
 # TODO
 
 - Finish youtube videos
-- Icons
 - Typography
 - Avatar & image
-- Button
-- Text field
 - Select field
 - Checkbox, radio buttons and switches
 - Pin input
